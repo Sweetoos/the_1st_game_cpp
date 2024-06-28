@@ -1,3 +1,0 @@
-/home/kacper/myProjects/c++/game/build/CMakeFiles/run.dir
-/home/kacper/myProjects/c++/game/build/CMakeFiles/edit_cache.dir
-/home/kacper/myProjects/c++/game/build/CMakeFiles/rebuild_cache.dir
