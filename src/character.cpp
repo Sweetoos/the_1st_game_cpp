@@ -2,34 +2,13 @@
 
 int Character::next_id_ = 1;
 
-Character::Character() : id_(next_id_++) {}
 
-void Character::set_name(const std::string &name)
-{
-    name_ = name;
-}
 
-int Character::get_id() const
+Character::Character(int &id, std::string &name, int &ad, int &level, int &exp) : 
+    id_(id),
+    name_(name),
+    attack_damage_(ad),
+    character_level_(level),
+    character_experience_(exp)
 {
-    return id_;
-}
-
-std::string Character::get_name() const
-{
-    return name_;
-}
-
-void Character::set_attack_damage(int ad)
-{
-    ad_ = ad;
-}
-
-int Character::get_attack_damage() const
-{
-    return ad_;
-}
-
-void Character::greet(const Entity &entity) const
-{
-    std::cout << "Hello " << entity.get_name() << " and my ID is: " << id_ << std::endl;
 }

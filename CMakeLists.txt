@@ -1,7 +1,22 @@
 cmake_minimum_required(VERSION 3.20)
 project(run)
-set(CMAKE_CXX_STANDARD_REQUIRED 20)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-file(GLOB_RECURSE SRC_FILES src/*.cpp)
-add_executable(run ${SRC_FILES})
-target_include_directories(run PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+set(SOURCES
+    src/main.cpp
+    src/character.cpp
+    src/human.cpp
+    src/weapon.cpp    
+)
+
+set(HEADERS
+    src/character.hpp
+    src/entity.hpp
+    src/human.hpp
+    src/main.hpp
+    src/weapon.hpp    
+)
+add_executable(run ${SOURCES} ${HEADERS})

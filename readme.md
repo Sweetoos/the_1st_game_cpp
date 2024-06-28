@@ -13,3 +13,11 @@ ninja -C build
 
 build/run
 ```
+# TODO
+
+- Setters and Getters
+- Every entity should have name and id
+- Add more races to the game
+- Add physical weapons
+- Add magical weapons
+- Add armoury

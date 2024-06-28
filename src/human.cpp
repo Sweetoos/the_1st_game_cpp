@@ -2,29 +2,11 @@
 
 
 
-void Human::set_name(const std::string &name)
+Human::Human(int &id, std::string &name, int &ad, int &level, int &exp):
+    id_(id),
+    name_(name),
+    attack_damage_(ad),
+    character_level_(level),
+    character_experience_(exp)
 {
-    name_ = name;
-}
-
-std::string Human::get_name() const
-{
-    return name_;
-}
-
-void Human::set_attack_damage(int ad)
-{
-    ad_ = ad;
-}
-
-int Human::get_attack_damage() const
-{
-    return ad_;
-}
-
-Human::Human() : Character() {}
-
-void Human::greet(const Entity &entity) const
-{
-    std::cout << "Hello " << entity.get_name() << " and my ID is " << get_id() << std::endl;
 }

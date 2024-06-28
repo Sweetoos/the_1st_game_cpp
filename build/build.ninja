@@ -44,9 +44,19 @@ cmake_ninja_workdir = /home/kacper/myProjects/c++/game/build/
 
 build cmake_object_order_depends_target_run: phony || CMakeFiles/run.dir
 
+build CMakeFiles/run.dir/src/main.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/main.cpp || cmake_object_order_depends_target_run
+  DEP_FILE = CMakeFiles/run.dir/src/main.cpp.o.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
+  OBJECT_DIR = CMakeFiles/run.dir
+  OBJECT_FILE_DIR = CMakeFiles/run.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/run.dir/
+  TARGET_PDB = run.pdb
+
 build CMakeFiles/run.dir/src/character.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/character.cpp || cmake_object_order_depends_target_run
   DEP_FILE = CMakeFiles/run.dir/src/character.cpp.o.d
-  INCLUDES = -I/home/kacper/myProjects/c++/game/inc
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
   OBJECT_DIR = CMakeFiles/run.dir
   OBJECT_FILE_DIR = CMakeFiles/run.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/run.dir/
@@ -54,15 +64,17 @@ build CMakeFiles/run.dir/src/character.cpp.o: CXX_COMPILER__run_unscanned_ /home
 
 build CMakeFiles/run.dir/src/human.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/human.cpp || cmake_object_order_depends_target_run
   DEP_FILE = CMakeFiles/run.dir/src/human.cpp.o.d
-  INCLUDES = -I/home/kacper/myProjects/c++/game/inc
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
   OBJECT_DIR = CMakeFiles/run.dir
   OBJECT_FILE_DIR = CMakeFiles/run.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/run.dir/
   TARGET_PDB = run.pdb
 
-build CMakeFiles/run.dir/src/main.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/main.cpp || cmake_object_order_depends_target_run
-  DEP_FILE = CMakeFiles/run.dir/src/main.cpp.o.d
-  INCLUDES = -I/home/kacper/myProjects/c++/game/inc
+build CMakeFiles/run.dir/src/weapon.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/weapon.cpp || cmake_object_order_depends_target_run
+  DEP_FILE = CMakeFiles/run.dir/src/weapon.cpp.o.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
   OBJECT_DIR = CMakeFiles/run.dir
   OBJECT_FILE_DIR = CMakeFiles/run.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/run.dir/
@@ -76,7 +88,7 @@ build CMakeFiles/run.dir/src/main.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacp
 #############################################
 # Link the executable run
 
-build run: CXX_EXECUTABLE_LINKER__run_ CMakeFiles/run.dir/src/character.cpp.o CMakeFiles/run.dir/src/human.cpp.o CMakeFiles/run.dir/src/main.cpp.o
+build run: CXX_EXECUTABLE_LINKER__run_ CMakeFiles/run.dir/src/main.cpp.o CMakeFiles/run.dir/src/character.cpp.o CMakeFiles/run.dir/src/human.cpp.o CMakeFiles/run.dir/src/weapon.cpp.o
   OBJECT_DIR = CMakeFiles/run.dir
   POST_BUILD = :
   PRE_LINK = :
