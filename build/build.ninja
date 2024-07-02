@@ -80,6 +80,24 @@ build CMakeFiles/run.dir/src/weapon.cpp.o: CXX_COMPILER__run_unscanned_ /home/ka
   TARGET_COMPILE_PDB = CMakeFiles/run.dir/
   TARGET_PDB = run.pdb
 
+build CMakeFiles/run.dir/src/menu.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/menu.cpp || cmake_object_order_depends_target_run
+  DEP_FILE = CMakeFiles/run.dir/src/menu.cpp.o.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
+  OBJECT_DIR = CMakeFiles/run.dir
+  OBJECT_FILE_DIR = CMakeFiles/run.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/run.dir/
+  TARGET_PDB = run.pdb
+
+build CMakeFiles/run.dir/src/elf.cpp.o: CXX_COMPILER__run_unscanned_ /home/kacper/myProjects/c++/game/src/elf.cpp || cmake_object_order_depends_target_run
+  DEP_FILE = CMakeFiles/run.dir/src/elf.cpp.o.d
+  FLAGS = -std=gnu++20
+  INCLUDES = -I/home/kacper/myProjects/c++/game/src
+  OBJECT_DIR = CMakeFiles/run.dir
+  OBJECT_FILE_DIR = CMakeFiles/run.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/run.dir/
+  TARGET_PDB = run.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target run
@@ -88,7 +106,7 @@ build CMakeFiles/run.dir/src/weapon.cpp.o: CXX_COMPILER__run_unscanned_ /home/ka
 #############################################
 # Link the executable run
 
-build run: CXX_EXECUTABLE_LINKER__run_ CMakeFiles/run.dir/src/main.cpp.o CMakeFiles/run.dir/src/character.cpp.o CMakeFiles/run.dir/src/human.cpp.o CMakeFiles/run.dir/src/weapon.cpp.o
+build run: CXX_EXECUTABLE_LINKER__run_ CMakeFiles/run.dir/src/main.cpp.o CMakeFiles/run.dir/src/character.cpp.o CMakeFiles/run.dir/src/human.cpp.o CMakeFiles/run.dir/src/weapon.cpp.o CMakeFiles/run.dir/src/menu.cpp.o CMakeFiles/run.dir/src/elf.cpp.o
   OBJECT_DIR = CMakeFiles/run.dir
   POST_BUILD = :
   PRE_LINK = :

@@ -1,12 +1,12 @@
 #include "human.hpp"
 
-
-
-Human::Human(int &id, std::string &name, int &ad, int &level, int &exp):
-    id_(id),
-    name_(name),
-    attack_damage_(ad),
-    character_level_(level),
-    character_experience_(exp)
+Human::Human() : Character(0, "", 0, 1, 0)
 {
+    std::cout << "there is a problem bruh" << std::endl;
+}
+
+Human::Human(int id, const std::string &name, int ad, int level, int exp) : Character(id, name, ad, level, exp)
+//needed to call Character constructor to make Human constructor, because Character doesnt have default constructor
+{
+    
 }

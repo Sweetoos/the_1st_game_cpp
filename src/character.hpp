@@ -14,8 +14,8 @@ private:
     int character_experience_ = 0.0;
 
 public:
-    Character();
-    Character(int &id, std::string &name, int &ad, int &level, int &exp);
+
+    Character(int id, const std::string &name, int ad, int level, int exp);
 
     // Setters
     void set_id(int &id) override { id_ = id; }

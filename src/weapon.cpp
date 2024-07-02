@@ -21,10 +21,10 @@ const std::list<Weapon> &Weapon::get_weapons() const
     return weapons_list_;
 }
 
-const std::list<Weapon> &Weapon::get_weapon_effects() const
-{
-    return weapons_effect_;
-}
+// const std::list<Weapon> &Weapon::get_weapon_effects() const
+// {
+//     return weapons_effect_;
+// }
 
 void Weapon::save_weapons_to_file(const std::string file_name) const
 {
