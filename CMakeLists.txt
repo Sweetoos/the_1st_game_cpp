@@ -10,6 +10,8 @@ set(SOURCES
     src/character.cpp
     src/human.cpp
     src/weapon.cpp    
+    src/menu.cpp
+    src/elf.cpp
 )
 
 set(HEADERS
@@ -18,5 +20,7 @@ set(HEADERS
     src/human.hpp
     src/main.hpp
     src/weapon.hpp    
+    src/menu.hpp
+    src/elf.hpp
 )
 add_executable(run ${SOURCES} ${HEADERS})
